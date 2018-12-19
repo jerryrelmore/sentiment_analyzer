@@ -1,6 +1,6 @@
 #!/bin/python3
 
-# File: sentiment_analysis_2.py
+# File: sentiment_analyzer.py
 # Inspired by: https://www.dataquest.io/blog/streaming-data-python/
 
 import sys
