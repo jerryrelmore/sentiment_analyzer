@@ -1,0 +1,5 @@
+tweepy
+dataset
+SQLAlchemy
+dataset
+textblob
