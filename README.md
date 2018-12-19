@@ -1,9 +1,11 @@
 # sentiment_analyzer
 ### Twitter sentiment analyzer using Tweepy, TextBlob, MySQL, SQLAlchemy, and dataset
 
-This project is an offline fork of [this Git](https://github.com/dataquestio/twitter-scrape) and based on the DataquestIO [tutorial](https://www.dataquest.io/blog/streaming-data-python/).
+This project is an offline fork of [this Git](https://github.com/dataquestio/twitter-scrape) and based on the DataquestIO [tutorial](https://www.dataquest.io/blog/streaming-data-python/). Updated and 
+fixed errors thrown from the original Git.
 
-Updated and fixed errors thrown from the original Git.
+It is a work in progress and not yet complete - at this point, it is only scraping tweets and
+adding the tweets and some relevant metadata to a MySQL database. Updates are forthcoming though.
 
 <b>NOTE: This analyzer uses Python 3 - there is a >97% chance it will not work in Python 2
 without modification. Additionally, the instructions below assume you already have a 
