@@ -2,6 +2,7 @@
 ### Streaming Twitter sentiment analyzer using Tweepy, TextBlob, MySQL, SQLAlchemy, and dataset
 
 ------
+
 <b>LICENSE:</b>
 
 This program is free software: you can redistribute it and/or modify
@@ -22,10 +23,12 @@ along with this program. If not, see http://www.gnu.org/licenses/.
 @authors-original: This project is an offline fork of [this Git](https://github.com/dataquestio/twitter-scrape) and based on the 
 DataquestIO [tutorial](https://www.dataquest.io/blog/streaming-data-python/). I modified the original source and fixed errors thrown 
 by the original Git.
+
 ------
 
-Version 0.01:
+Version: 0.01
 Date: 19-Dec-2018
+
 ------
 
 <i>It is a work in progress and not yet complete - at this point, it is only scraping tweets and
@@ -35,6 +38,7 @@ adding the tweets and some relevant metadata to a MySQL database. Updates are fo
 without modification. Additionally, the instructions below assume you already have a 
 Twitter developer account ([apply here](https://developer.twitter.com/en/apply-for-access.html)), as well as the two Twitter keys and two Twitter secrets 
 you will need for your app-user authentication ([instructions here](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html)).</b>
+
 ------
 
 ### Installation of dependencies
@@ -44,6 +48,7 @@ thousands of rows with no issues - YMMV.</b>
 1. <code>pip3 install -U -r requirements.txt</code>
 2. <code>sudo apt install python3-mysqldb</code>
 3. <code>python3 -m textblob.download_corpora</code>
+
 ------
 
 ### Setup your connections
@@ -56,6 +61,7 @@ thousands of rows with no issues - YMMV.</b>
 (if you want to export the results to CSV in addition to the database) and add a table name to use for the tweets table in the database. <b>NOTE:</b> If the table
 doesn't exist when you run the analyzer, the imported <code>dataset</code> module will create a table with the name in this field.
 6. You're now ready to run the analyzer - <code>python3 ./sentiment_analyzer.py</code>.
+
 ------
 
 ### Operation notes
@@ -67,11 +73,13 @@ and then begin automatically printing the results to screen. You can disable thi
 that may come into play if you search for more than several hundred concurrent terms (e.g., the entire NYSE ticker symbol list) or your server's connection can't keep up with
 the results. At this point, Twitter will start throwing you <code>420</code> errors. A method is defined in the analyzer to handle these errors, but if you do see them 
 popping up, consider narrowing your search terms or increasing your server's allocated bandwidth so that your app isn't banned.
+
 -----
 
 ### Analysis notes
 <b>TO BE CONTINUED</b> I have to add the methods to the script that perform, y'know, the actual analysis. Then I'll update this README to provide instructions on how to 
 setup and/or tweak the results.
+
 ------
 
 ### DISCLAIMER
