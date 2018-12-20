@@ -1,0 +1,10 @@
+env.sh
+
+### Python ###
+__pycache__/
+
+# Local stuff
+archive/
+auth_keys.py
+auth_keys.pyc
+settings.py
