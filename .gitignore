@@ -8,3 +8,4 @@ archive/
 auth_keys.py
 auth_keys.pyc
 settings.py
+*.csv
